@@ -43,6 +43,64 @@ a {
   text-decoration: none;
 }
 
+.bg-circle-1,
+.bg-circle-2,
+.bg-circle-3,
+.bg-circle-4,
+.bg-circle-5,
+.bg-circle-6 {
+  background-color: rgba(170, 60, 60, 0.2);
+  border-radius: 50%;
+}
+
+.bg-circle-1 {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: -10rem;
+  left: -10rem;
+}
+
+.bg-circle-2 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: -8rem;
+  left: -8rem;
+}
+
+.bg-circle-3 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+}
+
+.bg-circle-4 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 20rem;
+  left: 30rem;
+}
+
+.bg-circle-5 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 12rem;
+  left: 63rem;
+}
+
+.bg-circle-6 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 9rem;
+  left: 60rem;
+}
+
 /* Navigation */
 nav {
   padding: 1rem;
