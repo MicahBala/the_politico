@@ -17,6 +17,15 @@
     display: flex;
   }
 
+  .tabs,
+  .main-signup {
+    width: 100%;
+  }
+
+  .tabs {
+    margin-top: 2rem;
+  }
+
   .section-1 h1 {
     font-size: 2rem;
   }
@@ -45,6 +54,20 @@
 
   a {
     font-size: 1rem;
+  }
+
+  .tabs {
+    margin-top: 2rem;
+  }
+
+  .tabs,
+  .main-signup {
+    width: 100%;
+  }
+
+  .create,
+  .login {
+    border-radius: 0;
   }
 
   /* Circles */
