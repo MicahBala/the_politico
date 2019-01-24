@@ -20,7 +20,7 @@
       <!-- Sign up/Sign in -->
       <div class="auth-buttons">
         <a href="signup.html"> <div class="signup">Sign up</div></a
-        ><a href="#"> <div class="signin">Log in</div> </a>
+        ><a href="signup.html"> <div class="signin">Log in</div> </a>
       </div>
     </nav>
     <div class="main-content main-content-signup">
@@ -33,10 +33,18 @@
 
         <p><input type="email" placeholder="Your Email" /></p>
         <p><input type="password" placeholder="Your Password" /></p>
-        <p><input type="password" placeholder="Confirm Your Password" /></p>
-        <div class="button">Login</div>
+        <p>
+          <input
+            type="password"
+            placeholder="Confirm Your Password"
+            class="hide"
+          />
+        </p>
+        <div class="button btnSubmit">Sign up</div>
       </div>
     </div>
     <footer><p>2019&copy; POLITICO</p></footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
