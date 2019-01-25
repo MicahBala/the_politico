@@ -365,6 +365,7 @@ input {
 
 /* Profile page Menu Icons from Font-awesome */
 .vote-icon .fa-thumbs-up,
+.cast-icon,
 .setting-icon,
 .logout-icon {
   padding: 1rem 0.5rem;
@@ -374,6 +375,7 @@ input {
 }
 
 .vote-name,
+.cast-name,
 .setting-name,
 .logout-name {
   padding: 0.5rem;
@@ -383,6 +385,7 @@ input {
 }
 
 .vote-name p,
+.cast-name p,
 .setting-name p,
 .logout-name p {
   color: var(--light-gray);
@@ -450,7 +453,7 @@ th {
 
 th,
 td {
-  padding: 1rem;
+  padding: 0.5rem;
   text-align: left;
 }
 
@@ -470,4 +473,22 @@ td {
   color: var(--brown);
   font-weight: normal;
   font-size: 1rem;
+}
+
+/* Voting page */
+.btn-vote {
+  width: 8rem;
+  background-color: var(--brown);
+  text-align: center;
+  margin-top: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.btn-vote a {
+  color: var(--light-gray);
+  font-size: 1rem;
+  margin: 1rem 0;
+  font-weight: bold;
 }

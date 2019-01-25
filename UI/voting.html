@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>POLITICO &bull; Profile</title>
+    <title>POLITICO &bull; Cast Vote</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
@@ -26,9 +26,12 @@
       <div class="content-profile">
         <!-- Menu Icons -->
         <div class="menu-icons">
-          <div class="vote-icon">
-            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-          </div>
+          <div class="cast-icon">
+                <i class="fa fa-id-badge" aria-hidden="true"></i>
+              </div>
+              <div class="vote-icon">
+                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                  </div>
           <div class="setting-icon">
             <i class="fa fa-cog" aria-hidden="true"></i>
           </div>
@@ -39,6 +42,7 @@
 
         <div class="menu-names">
           <div class="vote-name"><p>Past Votes</p></div>
+          <div class="cast-name"><p>Cast Vote</p></div>
           <div class="setting-name"><p>Settings</p></div>
           <div class="logout-name"><p>Logout</p></div>
         </div>
@@ -56,30 +60,38 @@
             <div class="party">ANPP</div>
           </div>
           <div class="voted-party">
+              <p>Your VOTE is your RIGHT. DON'T sell it.</p>
             <p>
-              CLick on any party above to display the offices and candidates you
-              have voted for in the past.
+              CLick on any party above, then cast your vote below for any candidate of your choice. FINALLY, click on the Submit Vote button bellow to cast your vote.
             </p>
             <table class="table-voted">
               <thead>
-                <th>Candidate Voted for</td>
-                <th>Office contested</td>
+                <th>offices open</td>
+                <th>contestants</td>
+                    <th>cast your vote</td>
               </thead>
               <tbody>
                 <tr>
-                  <td>Micah Bala</td>
                   <td>President</td>
+                  <td>Micah Bala</td>
+                  <td><input type="checkbox" /></td>
                 </tr>
                 <tr>
-                  <td>Joseph Mike</td>
                   <td>Chairman</td>
+                  <td>Joseph Mike</td>
+                  <td><input type="checkbox" /></td>
                 </tr>
                 <tr>
-                  <td>Mary Yakubu</td>
                   <td>Councilor</td>
+                  <td>Mary Yakubu</td>
+                  <td><input type="checkbox" /></td>
                 </tr>
               </tbody>
             </table>
+
+            <div class="btn-vote">
+                <a href="#">Submit Vote</a>
+            </div>
           </div>
         </div>
       </div>
