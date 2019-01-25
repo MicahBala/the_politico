@@ -32,7 +32,7 @@ Users can:
 - Express interest to contest for any political office
 - View political parties and candidates they voted for in the past
 
-## Acknowledments
+## Acknowledgements
 
 As part of the guide for this project, I consulted the Andela Home Study Curriculum
 
