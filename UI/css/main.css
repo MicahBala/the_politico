@@ -350,3 +350,54 @@ input {
 /*
 * User Profile Page 
  */
+
+.main-content-profile {
+  width: 80%;
+  margin: 5.5rem auto 0 auto;
+  /* border-left: solid 1px var(--brown); */
+  /* padding: 2rem; */
+}
+
+.content-profile {
+  display: flex;
+  /* background-color: var(--brown); */
+}
+
+/* Profile page Menu Icons from Font-awesome */
+.vote-icon .fa-thumbs-up,
+.setting-icon,
+.logout-icon {
+  padding: 1rem 0.5rem;
+  color: var(--light-gray);
+  cursor: pointer;
+  /* border-bottom: solid 1px var(--light-gray); */
+}
+
+.vote-name,
+.setting-name,
+.logout-name {
+  padding: 0.5rem;
+  color: var(--light-gray);
+  cursor: pointer;
+  /* border-bottom: solid 1px var(--light-gray); */
+}
+
+.vote-name p,
+.setting-name p,
+.logout-name p {
+  color: var(--light-gray);
+  padding-top: 0.1rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.menu-icons {
+  background-color: var(--brown);
+  width: 2rem;
+  /* border-right: solid 1px var(--light-gray); */
+}
+
+.menu-names {
+  background-color: var(--brown);
+  width: 10rem;
+}
