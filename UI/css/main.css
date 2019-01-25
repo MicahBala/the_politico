@@ -457,3 +457,16 @@ td {
 .footer-profile {
   border-top: solid 1px var(--brown);
 }
+
+.user-login {
+  line-height: normal;
+  position: fixed;
+  right: 10%;
+  top: 50px;
+  margin-right: 60px;
+}
+
+.user-login p {
+  color: var(--brown);
+  font-weight: bold;
+}
