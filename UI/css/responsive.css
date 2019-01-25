@@ -38,6 +38,19 @@
     padding: 0 10px;
     font-weight: normal;
   }
+
+  /* User profile page */
+
+  .main-content-profile {
+    width: 95%;
+  }
+  .menu-names {
+    display: none;
+  }
+
+  .user-login {
+    position: static;
+  }
 }
 
 /* Smartphones */

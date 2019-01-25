@@ -468,5 +468,6 @@ td {
 
 .user-login p {
   color: var(--brown);
-  font-weight: bold;
+  font-weight: normal;
+  font-size: 1rem;
 }
