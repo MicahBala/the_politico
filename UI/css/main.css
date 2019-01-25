@@ -495,3 +495,32 @@ td {
   margin: 1rem 0;
   font-weight: bold;
 }
+
+/* Admin Page */
+/* .admin-content {
+  border: solid 1px var(--brown);
+  width: 40%;
+} */
+.table-create,
+.table-create td {
+  border: none;
+}
+
+.table-create td {
+  text-align: left;
+  padding: 0 1rem 0 0;
+}
+
+.input-admin {
+  border: solid 1px var(--dark);
+  padding: 0.5rem;
+}
+
+.btn-create-party,
+.btn-create-office {
+  color: var(--light-gray);
+  background-color: var(--brown);
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
