@@ -366,6 +366,7 @@ input {
 /* Profile page Menu Icons from Font-awesome */
 .vote-icon .fa-thumbs-up,
 .cast-icon,
+.contest-icon,
 .setting-icon,
 .logout-icon {
   padding: 1rem 0.5rem;
@@ -376,6 +377,7 @@ input {
 
 .vote-name,
 .cast-name,
+.contest-name,
 .setting-name,
 .logout-name {
   padding: 0.5rem;
@@ -386,6 +388,7 @@ input {
 
 .vote-name p,
 .cast-name p,
+.contest-name p,
 .setting-name p,
 .logout-name p {
   color: var(--light-gray);
@@ -402,7 +405,7 @@ input {
 
 .menu-names {
   background-color: var(--brown);
-  width: 10rem;
+  width: 15rem;
 }
 
 /* Display Area */
