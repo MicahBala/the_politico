@@ -401,3 +401,59 @@ input {
   background-color: var(--brown);
   width: 10rem;
 }
+
+/* Display Area */
+
+.display-area {
+  padding: 1rem;
+}
+
+.parties {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.party {
+  width: 4rem;
+  height: 4rem;
+  border: solid 1px var(--brown);
+  border-radius: 5px;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--brown);
+  font-weight: bold;
+  cursor: pointer;
+  flex: 1;
+}
+
+.voted-party p {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+table {
+  margin-top: 1rem;
+}
+
+table,
+th,
+td {
+  border: solid 1px var(--brown);
+  border-collapse: collapse;
+}
+
+th {
+  text-transform: uppercase;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: left;
+}
+
+.footer-profile {
+  border-top: solid 1px var(--brown);
+}
