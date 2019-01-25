@@ -506,10 +506,12 @@ td {
   border: none;
 }
 
-.table-create td {
+/* .table-create td,
+.table-office-list td,
+.table-office-list th {
   text-align: left;
   padding: 0 1rem 0 0;
-}
+} */
 
 .input-admin {
   border: solid 1px var(--dark);
@@ -523,4 +525,21 @@ td {
   padding: 0.5rem;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.office-party-list {
+  margin-top: 4rem;
+}
+
+.edit-delete {
+  text-decoration: underline;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.office-party-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex: 1;
 }
