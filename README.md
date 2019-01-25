@@ -17,7 +17,7 @@ User visits the landing page at ...... click on signup to create and account aan
 contest for an office. At this stage the app is partially complete
 with only the user inteface, no back-end integration and as such users cannot create any account or vote, but can navigate to different sections of the site with the links below:
 
-- [Home page](https://micahbala.github.io/the_politico/index.html)
+- [Home page](https://micahbala.github.io/the_politico/UI/index.html)
 - [User profile page](https://micahbala.github.io/the_politico/UI/user_profile.html)
 - [Admin page](https://micahbala.github.io/the_politico/UI/admin.html)
 - [Voting page](https://micahbala.github.io/the_politico/UI/voting.html)
