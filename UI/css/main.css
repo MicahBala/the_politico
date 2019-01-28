@@ -199,11 +199,12 @@ nav a {
   text-align: center;
   width: 10rem;
   height: 3rem;
-  box-shadow: 0px 5px 20px 0px rgba(75, 79, 124, 0.1);
+  box-shadow: 0px 5px 20px 0px rgba(75, 79, 124, 0.8);
   padding-top: 4px;
   border-radius: 10px;
   font-weight: bold;
   color: var(--brown);
+  /* border: solid 1px var(--brown); */
 }
 
 .your-vote {
