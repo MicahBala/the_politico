@@ -167,7 +167,7 @@ nav a {
 /* Main-Content */
 .main-content {
   width: 70%;
-  margin: 7rem auto 2rem auto;
+  margin: 5rem auto 2rem auto;
   display: flex;
 }
 
@@ -209,7 +209,7 @@ nav a {
 
 .your-vote {
   text-align: center;
-  padding: 2.5rem;
+  padding: 2rem;
   background: var(--brown);
   display: flex;
   flex-direction: column;
