@@ -1,3 +1,10 @@
+@media screen and (min-width: 651px) and (max-width: 900px) {
+  .main-signup,
+  .tabs {
+    width: 90%;
+  }
+}
+
 @media screen and (min-width: 451px) and (max-width: 650px) {
   /* Main-Content */
   .main-content {
@@ -13,6 +20,11 @@
 
   .section-1 {
     padding: 2rem;
+  }
+
+  .main-signup,
+  .tabs {
+    width: 80%;
   }
 }
 
@@ -57,5 +69,13 @@
 
   .auth-buttons {
     display: none;
+  }
+  .main-signup,
+  .tabs {
+    width: 80%;
+  }
+
+  .tabs {
+    margin-top: 2rem;
   }
 }
