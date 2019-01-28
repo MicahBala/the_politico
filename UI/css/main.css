@@ -53,10 +53,7 @@ a {
 
 .bg-circle-1,
 .bg-circle-2,
-.bg-circle-3,
-.bg-circle-4,
-.bg-circle-5,
-.bg-circle-6 {
+.bg-circle-3 {
   background-color: var(--background);
   border-radius: 50%;
 }
