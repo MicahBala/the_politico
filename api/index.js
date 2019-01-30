@@ -1,7 +1,6 @@
 'use strict';
 
 const express = require('express');
-const bodyParser = require('body-parser');
 const parties = require('./routes/parties');
 const offices = require('./routes/offices');
 
@@ -9,11 +8,8 @@ const app = express();
 
 app.use(express.json());
 
-app.use(bodyParser.json);
-app.use(bodyParser.urlencoded({ extended: false }));
-
 app.get('/', (req, res) => {
-  res.send('Welcome to POLITIO');
+  res.send('Welcome to POLITICO');
 });
 
 app.use('/api/v1/parties', parties);
