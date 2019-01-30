@@ -7,6 +7,10 @@ const app = express();
 
 app.use(express.json());
 
+app.get('/', (req, res) => {
+  res.send('Welcome to POLITIO');
+});
+
 app.use('/api/v1/parties', parties);
 
 // Environment variable PORT
