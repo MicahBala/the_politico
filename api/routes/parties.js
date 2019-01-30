@@ -35,4 +35,18 @@ router.post('/', (req, res) => {
   res.send(createdParty);
 });
 
+// GET all PARTIES
+router.get('/', (req, res) => {
+  res.send(partyList);
+});
+
+// GET a single PARTY
+router.get('/:id', (req, res) => {
+  const party = partyList.filter(c => c.id === parseInt(req.params.id));
+
+  // If does not find a match return 404
+  if (!party) res.status(400).send('party not found');
+  res.send(party);
+});
+
 module.exports = router;
