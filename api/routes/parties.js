@@ -1,11 +1,9 @@
 'use strict';
-
+const partyList = require('../models/party_list');
 const Joi = require('joi');
 const express = require('express');
 
 const router = express.Router();
-
-let parties = [];
 
 // Create a PARTY
 router.post('/', (req, res) => {
@@ -27,13 +25,13 @@ router.post('/', (req, res) => {
   }
 
   const createdParty = {
-    id: parties.length + 1,
+    id: partyList.length + 1,
     name: req.body.name,
     hqAddress: req.body.hqAddress,
     logoUrl: req.body.logoUrl
   };
 
-  parties.push(createdParty);
+  partyList.push(createdParty);
   res.send(createdParty);
 });
 
