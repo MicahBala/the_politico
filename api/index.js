@@ -2,6 +2,7 @@
 
 const express = require('express');
 const parties = require('./routes/parties');
+const offices = require('./routes/offices');
 
 const app = express();
 
@@ -12,6 +13,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/api/v1/parties', parties);
+app.use('/api/v1/offices', offices);
 
 // Environment variable PORT
 const port = process.env.PORT || 3000;
