@@ -1,4 +1,5 @@
 'use strict';
+
 const partyList = require('../models/party_list');
 const Joi = require('joi');
 const express = require('express');
@@ -46,6 +47,19 @@ router.get('/:id', (req, res) => {
 
   // If does not find a match return 404
   if (!party) res.status(400).send('party not found');
+  res.send(party);
+});
+
+//  DELETE a PARTY
+router.delete('/:id', (req, res) => {
+  // Look up the course
+  const party = partyList.find(c => c.id === parseInt(req.params.id));
+  // If not exist return 404
+  if (!party) res.status(404).send('Party not found');
+  const index = partyList.indexOf(party);
+  partyList.splice(index, 1);
+
+  // Return a response to the client
   res.send(party);
 });
 

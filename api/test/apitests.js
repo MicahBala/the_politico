@@ -125,3 +125,20 @@ describe('Get a single office', () => {
       );
   });
 });
+
+describe('Delete a single party', () => {
+  it('Delete a single political party based on ID', done => {
+    request(app)
+      .delete('/parties/:id')
+      .expect(200)
+      .expect(
+        {
+          id: 1,
+          name: 'PDP',
+          hqAddress: 'Kampala Street',
+          logoUrl: '/api/images/logo.png'
+        },
+        done()
+      );
+  });
+});
