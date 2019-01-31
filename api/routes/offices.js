@@ -33,4 +33,18 @@ router.post('/', (req, res) => {
   res.send(createdOffice);
 });
 
+// GET all OFFICES
+router.get('/', (req, res) => {
+  res.send(officeList);
+});
+
+// GET a single OFFICE
+router.get('/:id', (req, res) => {
+  const office = officeList.find(c => c.id === parseInt(req.params.id));
+
+  // If does not find a match return 404
+  if (!office) res.status(400).send('office not found');
+  res.send(office);
+});
+
 module.exports = router;

@@ -6,16 +6,27 @@ describe('Create office', () => {
   it('Creates political offices', done => {
     request(app)
       .post('/offices')
-      .send({
-        type: 'federal',
-        name: 'president'
-      })
+      .send(
+        {
+          type: 'federal',
+          name: 'president'
+        },
+        {
+          type: 'state',
+          name: 'councillor'
+        }
+      )
       .expect(200)
       .expect(
         {
           id: 1,
           type: 'federal',
           name: 'president'
+        },
+        {
+          id: 2,
+          type: 'state',
+          name: 'councillor'
         },
         done()
       );
@@ -72,6 +83,43 @@ describe('Get a single party', () => {
           name: 'PDP',
           hqAddress: 'Kampala Street',
           logoUrl: '/api/images/logo.png'
+        },
+        done()
+      );
+  });
+});
+
+describe('Get a list of offices', () => {
+  it('Get list of political offices', done => {
+    request(app)
+      .get('/offices')
+      .expect(200)
+      .expect(
+        {
+          id: 1,
+          type: 'federal',
+          name: 'president'
+        },
+        {
+          id: 2,
+          type: 'state',
+          name: 'councillor'
+        },
+        done()
+      );
+  });
+});
+
+describe('Get a single office', () => {
+  it('Get a single political office based on ID', done => {
+    request(app)
+      .get('/offices/:id')
+      .expect(200)
+      .expect(
+        {
+          id: 1,
+          type: 'federal',
+          name: 'president'
         },
         done()
       );
