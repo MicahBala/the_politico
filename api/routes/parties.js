@@ -63,4 +63,31 @@ router.delete('/:id', (req, res) => {
   res.send(party);
 });
 
+// Edit a PARTY
+router.put('/:id', (req, res) => {
+  const party = partyList.find(c => c.id === parseInt(req.params.id));
+  if (!party) return res.status(404).send('Party not found');
+
+  const schema = {
+    name: Joi.string()
+      .min(2)
+      .required(),
+    hqAddress: Joi.string().required(),
+    logoUrl: Joi.string().required()
+  };
+
+  const result = Joi.validate(req.body, schema);
+  if (result.error) {
+    return res.status(404).send('Party not found');
+  }
+
+  // Update the party
+  party.name = req.body.name;
+  party.hqAddress = req.body.hqAddress;
+  party.logoUrl = req.body.logoUrl;
+
+  // And return updated course to client
+  res.send(party);
+});
+
 module.exports = router;
