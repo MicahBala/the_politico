@@ -1,8 +1,8 @@
 'use strict';
 
-const express = require('express');
-const parties = require('./routes/parties');
-const offices = require('./routes/offices');
+import express from 'express';
+import parties from './routes/parties';
+import offices from './routes/offices';
 
 const app = express();
 
