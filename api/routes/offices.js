@@ -1,7 +1,7 @@
 'use strict';
-const officeList = require('../models/office_list');
-const Joi = require('joi');
-const express = require('express');
+import officeList from '../models/office_list';
+import Joi from 'joi';
+import express from 'express';
 
 const router = express.Router();
 
