@@ -1,6 +1,8 @@
-'use strict';
+// 'use strict';
+
 const partyList = require('../models/party_list');
 const Joi = require('joi');
+
 const express = require('express');
 
 const router = express.Router();

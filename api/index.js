@@ -1,11 +1,15 @@
 'use strict';
 
-const express = require('express');
-const parties = require('./routes/parties');
+import express from 'express';
+import bodyParser from 'body-parser';
+import parties from './routes/parties';
 
 const app = express();
 
 app.use(express.json());
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/', (req, res) => {
   res.send('Welcome to POLITIO');
