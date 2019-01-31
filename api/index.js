@@ -1,0 +1,24 @@
+'use strict';
+
+import express from 'express';
+import parties from './routes/parties';
+import offices from './routes/offices';
+
+const app = express();
+
+app.use(express.json());
+
+app.get('/', (req, res) => {
+  res.send('Welcome to POLITICO');
+});
+
+app.use('/api/v1/parties', parties);
+app.use('/api/v1/offices', offices);
+
+// Environment variable PORT
+const port = process.env.PORT || 3000;
+
+// Listen on a given port
+app.listen(port, () => console.log(`Listening on port ${port} ...`));
+
+module.exports = app;
