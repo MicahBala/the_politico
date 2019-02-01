@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/MicahBala/the_politico.svg?branch=develop)](https://travis-ci.org/MicahBala/the_politico)
+
 # the_politico
 
 ## Introduction
